@@ -9,4 +9,4 @@ import './index.css';
 
 
 // // Mount a true react component using JSX Syntax:
-ReactDOM.render(<App />, document.getElementById('root3'));
+ReactDOM.render(<App />, document.getElementById('root'));

@@ -12,9 +12,10 @@ React app, typically called `<App />`.
 two files work together. Webpack takes care of injecting all
 of the linked CSS files into `index.html` at run time.
 
-`index.html` has been stripped to be minimal (no favicon, meta
-tags, etc). There are three `<div />` elements that `index.js`
-uses for mounting (see `index.js`).
+`index.html` has been stripped down to bare minimum. The favicon
+is left in to show how webpack replaces %PUBLIC_URL% with the
+proper path to the static folder.. There are three `<div />` 
+elements that `index.js` uses for mounting (see `index.js`).
 
 `package.json` has been updated with `homepage` set to `./` instead
 of `/`. This means that you can simply run `npm run build` and open

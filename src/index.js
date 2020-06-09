@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// Just an element in a variable (nothing special)
+const elem1 = <h1>Hello World 2</h1>;
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// A real react component: a function that returns an element! 
+// Can now reference this using JSX Syntax: <Elem 2/>
+const Elem2 = () => <h1>Hello World 3</h1>;
+
+// We can also just straight up mount an inline element to the DOM:
+ReactDOM.render(<h1>Hello World 1</h1>, document.getElementById('root1'));
+
+// Mount an element that's just stored in a variable:
+ReactDOM.render(elem1, document.getElementById('root2'));
+
+// Mount a true react component using JSX Syntax:
+ReactDOM.render(<Elem2 />, document.getElementById('root3'));

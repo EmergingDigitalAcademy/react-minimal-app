@@ -1,23 +1,10 @@
-# Simple React Prototype
+# Blaine's Bread Store
 
-This project was created with `create-react-app`. It has been
-stripped of everything fancy. The goal is simply to help teach folks
-who are just learning React, Webpack, and JSX.
+## A Simple React App
 
-## Lay of the Land
-
-`index.js` shows three ways to mount a JSX element to the DOM. 
-Normally you'd only mount one element that holds all of your
-React app, typically called `<App />`.
-
-`index.js` imports a single `index.css` file to show how these
-two files work together. Webpack takes care of injecting all
-of the linked CSS files into `index.html` at run time.
-
-`index.html` has been stripped down to bare minimum. The favicon
-is left in to show how webpack replaces %PUBLIC_URL% with the
-proper path to the static folder.. There are three `<div />` 
-elements that `index.js` uses for mounting (see `index.js`).
+This project is meant to show off simple ways to use React. On this
+branch, the `blaines-bread-store` branch, you can see some easy
+ways to use props, local state, and parent/child state interaction.
 
 `package.json` has been updated with `homepage` set to `./` instead
 of `/`. This means that you can simply run `npm run build` and open

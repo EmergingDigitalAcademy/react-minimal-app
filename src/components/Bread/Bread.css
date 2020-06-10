@@ -1,0 +1,8 @@
+.bread-component {
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.bread-component h2 {
+    text-decoration: underline;
+}

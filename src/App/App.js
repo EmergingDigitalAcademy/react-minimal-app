@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header/Header.js';
 import Bread from '../components/Bread/Bread.js';
+import Specials from '../components/Specials/Specials';
 import './App.css';
 
 class App extends React.Component {
@@ -22,7 +23,7 @@ class App extends React.Component {
     increaseBread = () => {
         const loafs = this.state.totalBread;
         this.setState({
-            totalBread: loafs+1
+            totalBread: loafs + 1
         })
     }
     clearBakerName = () => {
@@ -40,16 +41,29 @@ class App extends React.Component {
         return (
             <div className='content'>
                 <Header title='Blaines Bake Shop' />
+                <Specials />
                 <input value={this.state.bakerName} onChange={this.handleInput} />
                 <button onClick={this.clearBakerName}>Clear</button>
                 <p>Welcome {this.state.bakerName}!</p>
                 <p>There are {this.state.totalBread} breads in stock today.</p>
-                <Bread breadCounter={this.increaseBread} breadType='Sourdough Bread' bakerName={this.state.bakerName} />
-                <Bread breadCounter={this.increaseBread} breadType='French Baguette' bakerName={this.state.bakerName} />
-                <Bread breadCounter={this.increaseBread} breadType='Dark Rye Bread' bakerName={this.state.bakerName} />
-                <Bread breadCounter={this.increaseBread} breadType='Banana Bread' bakerName={this.state.bakerName} />
-                <br/>
-                <br/>
+                <Bread
+                    breadCounter={this.increaseBread}
+                    breadType='Sourdough Bread'
+                    bakerName={this.state.bakerName} />
+                <Bread
+                    breadCounter={this.increaseBread}
+                    breadType='French Baguette'
+                    bakerName={this.state.bakerName} />
+                <Bread
+                    breadCounter={this.increaseBread}
+                    breadType='Dark Rye Bread'
+                    bakerName={this.state.bakerName} />
+                <Bread
+                    breadCounter={this.increaseBread}
+                    breadType='Banana Bread'
+                    bakerName={this.state.bakerName} />
+                <br />
+                <br />
                 <footer>
                     © Bread 2020
                 </footer>

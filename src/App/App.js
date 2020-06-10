@@ -9,6 +9,10 @@ class App extends React.Component {
         totalBread: 0,
     }
 
+    // used for clearing the state 
+    // back to default value
+    defaultName = 'blaine';
+
     handleInput = (event) => {
         this.setState({
             bakerName: event.target.value
@@ -23,7 +27,7 @@ class App extends React.Component {
     }
     clearBakerName = () => {
         this.setState({
-            bakerName: 'blaine'
+            bakerName: this.defaultName
         })
     }
 
